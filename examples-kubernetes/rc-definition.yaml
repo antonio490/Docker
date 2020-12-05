@@ -1,0 +1,28 @@
+# Replicat Set Definition
+
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myapp-rc
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  template:
+
+    metadata:
+      name: myapp-pods
+      labels:
+        app: myapp
+        type: front-end
+    spec:
+      containers:
+        - name: nginx-controller
+          image: nginx
+
+    replicas: 3
+
+
+# kubectl create -f rc-definition.yaml
+# kubectel get ReplicationController
+# kubectel get pods

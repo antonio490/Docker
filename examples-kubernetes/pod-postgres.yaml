@@ -12,3 +12,7 @@ spec:
       env:
         - name: POSTGRES_PASSWORD
           value: mysecretpassword
+
+# kubectl create -f pod-postgres.yaml
+# kubectl get pods
+# kubectl describe pod postgres

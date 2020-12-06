@@ -21,3 +21,8 @@ spec:
 
 ## Both labels on the selector and the template should be the
 ## same in order to work correctly
+
+
+## Scale up number of replicas
+
+# $ kubectl edit replicaset myapp-replicaset 
